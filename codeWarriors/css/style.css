@@ -1,0 +1,362 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+  text-align: center;
+}
+body {
+  background: url(https://2minutetabletop.com/wp-content/uploads/2020/07/Greybanner-Coliseum-Night-Large-22x16-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "MedievalSharp", cursive;
+}
+.hidden {
+  display: none;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* /////////////////////////////////////////// */
+/* chars*/
+/* ////////////////////////////////////////////////// */
+
+sup {
+  font-size: 40px;
+}
+
+ul {
+  list-style: none;
+  font-size: 15px;
+  font-family: "Open Sans";
+  color: #9095aa;
+  padding: 0px;
+  margin: 0px;
+}
+
+li {
+  border-bottom: 1px solid #494a5a;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#container {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.container {
+  margin-left: 8%;
+}
+small {
+  font-size: 15px;
+  color: white;
+}
+.whole {
+  margin: 4px;
+}
+
+.whole * {
+  font-family: "MedievalSharp", cursive;
+}
+
+.type {
+  width: 300px;
+  border-radius: 5px 5px 0px 0px;
+  background-color: rgb(187, 67, 44);
+  height: 62px;
+}
+
+.type p {
+  font-family: "MedievalSharp", cursive;
+  font-weight: 800;
+  font-size: 29px;
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.plan {
+  width: 300px;
+  background-color: #2b2937;
+  border-radius: 0px 0px 5px 5px;
+  font-family: "Open Sans";
+  font-style: condensed;
+  font-size: 90px;
+  color: white;
+  text-align: center;
+}
+
+.ultimate {
+  background-color: #1abc9c;
+}
+
+.header {
+  border-bottom: 1px solid #494a5a;
+  padding-bottom: 39px;
+}
+
+.header span {
+  font-size: 32px;
+}
+
+.month {
+  font-size: 14px;
+  color: #575757;
+  padding: 0px;
+  margin: -10px;
+}
+
+/* /////////////////////////////////////////// */
+/* circular graf*/
+/* ////////////////////////////////////////////////// */
+
+h1,
+p,
+a,
+span {
+  color: #fff;
+}
+.scnd-font-color {
+  color: #9099b7;
+}
+
+.block {
+  margin: 25px 0px 0 0;
+  background: rgb(43, 41, 55);
+  border-radius: 5px;
+  float: left;
+  width: 300px;
+  overflow: hidden;
+}
+.donutChart {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 2rem;
+  border-radius: 100%;
+}
+p.centerDate {
+  background: #394264;
+  position: absolute;
+  text-align: center;
+  font-size: 28px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 130px;
+  height: 130px;
+  margin: auto;
+  border-radius: 50%;
+  line-height: 35px;
+  padding: 15% 0 0;
+  border: 0.5px solid white;
+}
+
+.recorte {
+  border-radius: 50%;
+  clip: rect(0px, 200px, 200px, 100px);
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+.quesito {
+  border-radius: 50%;
+  clip: rect(0px, 100px, 200px, 0px);
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  font-family: monospace;
+  font-size: 1.5rem;
+}
+#porcion1 {
+  border: 0.5px solid white;
+}
+
+#porcionFin {
+  transform: rotate(180deg);
+  border: 0.5px solid white;
+}
+#secondHalf {
+  transform: rotate(0deg);
+}
+
+/* /////////////////////////////////////////// */
+/* MODAL STYLE KYU calculator*/
+/* ////////////////////////////////////////////////// */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border: 1px solid black;
+  border-radius: 10px;
+  z-index: 10;
+  background-color: white;
+  width: 500px;
+  max-width: 80%;
+  background: url(https://images.unsplash.com/photo-1528751394743-526cf5933226?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1490&q=80);
+  background-size: 100% 100%;
+  height: 400px;
+}
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modalHeader {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+
+.modalHeader .title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.modalHeader .closeButton {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.modalBody {
+  padding: 10px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+/* //////////////////////////////////// */
+/* button and forms */
+/* //////////////////////////////////////////////////// */
+/* General Button Style */
+.button {
+  background: url(https://img.icons8.com/ios/2x/battle.png);
+  background-size: 100% 100%;
+  /* background-color:rgb(103,149,222); */
+  color: ;
+  border: thin;
+  width: 40px;
+  border-radius: 5px;
+  outline: none;
+}
+.button:hover {
+  background-color: rgb(187, 67, 44);
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 16%;
+  margin: auto;
+}
+input {
+  width: 130px;
+  outline: none;
+  border-radius: 5px;
+  background-color: rgb(239, 239, 239);
+}
+
+h1 {
+  margin-top: 20%;
+  color: rgb(254, 212, 118);
+}
+
+/* ////////////////////////parchment layout////////////////////////*/
+
+#cartita {
+  width: 60%;
+  margin: 0;
+  padding: 0;
+  opacity: 0.9;
+  float: right;
+}
+#cartaEncabezado {
+  background-image: url(http://fotos.subefotos.com/e0139226fb6eb14f6009f4e87fa2f8c3o.png);
+  background-size: 100% 100%;
+  height: 78px;
+  margin-bottom: 40px;
+}
+#cartaContenido {
+  background-image: url(http://fotos.subefotos.com/cc42099b19996d043583e8a4377e8aaeo.png);
+  background-repeat: repeat-y;
+  background-size: 100% 100%;
+  min-height: 50px;
+  margin-top: -40px;
+  padding-bottom: 40px;
+}
+#cartaMensaje {
+  margin: 0 5% 0 5%;
+  padding: 0 5% 0 5%;
+  width: 90%;
+  text-align: center;
+  text-align: center;
+}
+#cartaFirma {
+  text-align: right;
+  font-size: 1em;
+  margin: 0 16%;
+}
+#cartaFooter {
+  background-image: url(https://fotos.subefotos.com/57f6ea113ab8b27188c4f496543efb4fo.png);
+  background-size: 100% 100%;
+  margin-top: -10px;
+  text-align: right;
+  font-size: 30px;
+  height: 78px;
+}
+
+#reload {
+  margin: 5% 0 2% 0;
+  width: 120px;
+  height: 25px;
+}
+#warriorName,
+#usersMesage {
+  color: black;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/

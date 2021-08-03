@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="Warrior's honor" content="An app that provides codewars user information">
+	<meta name="keywords" content="one, two, three">
+	<link href="https://img.icons8.com/ios/2x/battle.png" rel="icon">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+
+
+	<title>Warrior</title>
+
+	<!-- external CSS link -->
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<!-- main form -->
+	<h1>What is Your Warrior Name?</h1>
+	<form onsubmit="return false" id="warriorForm">
+		<input type="text" placeholder="Warrior name">
+		<input class="button" type="submit" value="" id="button">
+	</form>
+	<input type="submit" class="hidden" value="New Warrior" id="reload">
+
+	<!-- Modal pop up -->
+	<button data-modal-target="#modal" class="hidden">KYU Goal</button>
+	<section class="modal" id="modal">
+		<section class="modalHeader">
+			<section class="title">
+				<form onsubmit="return false" id="form">
+					<input type="text" placeholder="Honor Goal" class="searchVar" id="number" autocomplete="off"
+						maxlength="8">
+					<input type="submit" value="calculate" id="validate">
+				</form>
+			</section>
+			<button data-close-button class="closeButton">&times;</button>
+		</section>
+		<section class="modalBody">
+			<section id="wholeCalc" class="hidden whole">
+				<section class="type ultimate">
+					<p>To reach</p>
+				</section>
+				<section class="plan">
+					<section class="header">
+						<sup id="honorGoal"></sup>
+						<p class="month">your options are</p>
+					</section>
+					<section class="content">
+						<ul id="kyuCalculator">
+						</ul>
+					</section>
+				</section>
+			</section>
+		</section>
+	</section>
+	<section id="overlay"></section>
+	<!-- data section  -->
+	<section id="info" class="hidden">
+		<!-- grafic -->
+		<section class="container">
+			<section class="donutChartBlock block">
+				<section class="donutChart">
+					<section id="porcion1" class="recorte">
+						<section id="firstHalf" class="quesito" data-rel="100"></section>
+					</section>
+					<section id="porcionFin" class="recorte">
+						<section id="secondHalf" class="quesito"></section>
+					</section>
+					<p class="centerDate" id="kyuGraf"></p>
+				</section>
+				<p id="plusHonor"></p>
+			</section>
+		</section>
+		<!-- parchment -->
+		<section id="cartita">
+			<header id="cartaEncabezado"></header>
+			<section id="cartaContenido">
+				<section id="cartaMensaje">
+					<h2 id="warriorName"></h2>
+					<p id="usersMesage"></p>
+				</section>
+				<section id="cartaFirma">-A fan</section>
+			</section>
+			<footer id="cartaFooter"></footer>
+		</section>
+		<!-- charts and data -->
+		<section id="container">
+			<section class="whole">
+				<section class="type">
+					<p>Honor</p>
+				</section>
+				<section class="plan">
+					<section class="header">
+						<sup id=honor></sup>
+						<p class="month">current Honor</p>
+					</section>
+					<section class="content">
+						<ul id="honorList">
+						</ul>
+					</section>
+				</section>
+			</section>
+			<section class="whole">
+				<section id="standard" class="type standard">
+					<p>Rank Score</p>
+				</section>
+				<section class="plan">
+					<section class="header">
+						<sup id="rank"></sup>
+						<p class="month">Overall Rank</p>
+					</section>
+					<section class="content">
+						<ul id="rankScore">
+						</ul>
+					</section>
+				</section>
+			</section>
+			<section class="whole">
+				<section class="type ultimate">
+					<p>Next Level</p>
+				</section>
+				<section class="plan">
+					<section class="header">
+						<sup id="next"></sup>
+						<p class="month">Next kyu</p>
+					</section>
+					<section class="content">
+						<ul id="nextLevel">
+						</ul>
+					</section>
+				</section>
+			</section>
+		</section>
+		<script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
