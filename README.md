@@ -20,7 +20,7 @@ Try online at [WARRIOR'S HONOR](https://warriorshonor.netlify.app/)!
 
 # My CodeWar Profile
 
-[](https://www.codewars.com/users/DavidNey/badges/large)
+[rank](https://www.codewars.com/users/DavidNey/badges/large)
 
 I Love doing code challenges for fun! I try to do at least 1 or 2 code challenges every morning while having coffee. Most of the challenges I do are from [codewars.com](https://www.codewars.com/). When I started codewars out, I did not know how the ranking system and Honor points work. I found out that they have an API with all their data so I made this website to have a snapshot of my friends and my progress. This was for me to have a better idea of what to do to compete for a better position in our clan ranking.
 
