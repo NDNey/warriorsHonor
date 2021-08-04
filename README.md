@@ -3,12 +3,6 @@ Codewars is an educational community for computer programming. On the platform, 
 
 If you are a Codewars warrior, you must be familiar with the different rewards earned through completing code challenges to move to other Katas (levels). When starting out, a warrior may have a difficult time understanding the points system and charting their progress. This website provides a snapshot of your progress and calculates what actions are necessary to reach the next level.
 
-# My CodeWar Profile
-
-(https://www.codewars.com/users/DavidNey/badges/large)
-
-I Love doing code challenges for fun! I try to do at least 1 or 2 code challenges every morning while having coffee. Most of the challenges I do are from [codewars.com](https://www.codewars.com/). When I started codewars out, I did not know how the ranking system and Honor points work. I found out that they have an API with all their data so I made this website to have a snapshot of my friends and my progress. This was for me to have a better idea of what to do to compete for a better position in our clan ranking.
-
 Try online at [WARRIOR'S HONOR](https://warriorshonor.netlify.app/)!
 <article>
       <div>
@@ -23,4 +17,10 @@ Try online at [WARRIOR'S HONOR](https://warriorshonor.netlify.app/)!
   </tr>
 </tbody></table>
 </article>
+
+# My CodeWar Profile
+
+[](https://www.codewars.com/users/DavidNey/badges/large)
+
+I Love doing code challenges for fun! I try to do at least 1 or 2 code challenges every morning while having coffee. Most of the challenges I do are from [codewars.com](https://www.codewars.com/). When I started codewars out, I did not know how the ranking system and Honor points work. I found out that they have an API with all their data so I made this website to have a snapshot of my friends and my progress. This was for me to have a better idea of what to do to compete for a better position in our clan ranking.
 
