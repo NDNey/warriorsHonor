@@ -1,7 +1,7 @@
 # WARRIOR'S HONOR
 Codewars is an educational community for computer programming. On the platform, software developers train on programming challenges known as kata.
 
-If you are a Codewars warrior, you most be familiar with the different rewards earned through completing code challenges to move to other Katas (levels). When starting out, a warrior may have a difficult time understanding the points system and charting their progress. This website provides a snapshot of your progress and calculates what actions are necessary to reach the next level.
+If you are a Codewars warrior, you must be familiar with the different rewards earned through completing code challenges to move to other Katas (levels). When starting out, a warrior may have a difficult time understanding the points system and charting their progress. This website provides a snapshot of your progress and calculates what actions are necessary to reach the next level.
 
 ![alt rank](https://www.codewars.com/users/DavidNey/badges/large)
 
@@ -19,14 +19,4 @@ Try online at [WARRIOR'S HONOR](https://warriorshonor.netlify.app/)!
   </tr>
 </tbody></table>
 </article>
-
-## What is In this Repo:
-
-A game that uses an algorithm to guess the card the player has in mine in three clicks. It was created using HTML,CSS, and JAVASCRIPT while learning functional programing and CSS animation with Javascript.
-
-## Lessons Learned:
-
-If you have an idea, it will be possible to make it work in different ways. It may not be the ideal or cleanest way but you can always come back and refactor your code.
-
-
 
